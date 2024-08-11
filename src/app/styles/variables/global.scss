@@ -9,11 +9,8 @@
   --font-line-l: 32px;
   --font-l: var(--font-size-l) / var(--font-line-l) var(--font-family-main);
 
-  // color-scheme: light dark;
-  // color: rgba(255, 255, 255, 0.87);
-  // background-color: #242424;
-  // font-synthesis: none;
-  // text-rendering: optimizeLegibility;
-  // -webkit-font-smoothing: antialiased;
-  // -moz-osx-font-smoothing: grayscale;
+  --font-size-exl: 32px;
+  --font-line-exl: 40px;
+  --font-exl: var(--font-size-exl) / var(--font-line-exl)
+    var(--font-family-main);
 }

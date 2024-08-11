@@ -1,14 +1,21 @@
-import { Link, Outlet } from 'react-router-dom';
+import { Outlet } from 'react-router-dom';
+
+import { Header } from 'widgets/Header';
+import { Footer } from 'widgets/Footer';
+import { Container } from 'shared/ui/Container';
 
 import './styles/index.scss';
 
 export const App = () => {
   return (
     <div className="app light">
-      <header>
-        <Link to="/">главная</Link>
-      </header>
-      <Outlet />
+      <Header />
+
+      <Container component="main">
+        <Outlet />
+      </Container>
+
+      <Footer />
     </div>
   );
 };
