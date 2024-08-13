@@ -15,7 +15,7 @@ npm i
 ### После чего запустить
 
 ```
-npm run dev
+npm start
 ```
 
 ---
