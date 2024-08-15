@@ -29,9 +29,13 @@ const employeesListSlice = createSlice({
       state.employees = newEmployees;
       localStorage.setItem(KEY_EMPLOYEES, JSON.stringify(newEmployees));
     },
+    addEmployeeToList(state, action) {
+      state.employees.push(action.payload);
+      localStorage.setItem(KEY_EMPLOYEES, JSON.stringify(state.employees));
+    },
   },
 });
 
-export const { setEmployeesList, editEmployeesList } =
+export const { setEmployeesList, editEmployeesList, addEmployeeToList } =
   employeesListSlice.actions;
 export default employeesListSlice.reducer;
