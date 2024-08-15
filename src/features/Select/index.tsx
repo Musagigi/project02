@@ -11,7 +11,7 @@ type SelectProps = {
   value: string;
   onChange: (event: ChangeEvent<HTMLSelectElement>) => void;
   options: SelectOption[];
-  classes?: string;
+  className?: string;
   label: string;
 } & SelectHTMLAttributes<HTMLSelectElement>;
 
@@ -19,11 +19,11 @@ export const Select = ({
   value,
   onChange,
   options,
-  classes,
+  className,
   label,
 }: SelectProps) => {
   return (
-    <label className={classes || styles.block}>
+    <label className={`${className} ${styles.block}`}>
       {label}:
       <select
         value={value}

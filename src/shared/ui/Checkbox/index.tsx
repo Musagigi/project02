@@ -5,17 +5,17 @@ type CheckboxProps = {
   label: string;
   checked: boolean;
   onChange: (event: ChangeEvent<HTMLInputElement>) => void;
-  classes?: string;
+  className?: string;
 };
 
 export const Checkbox = ({
   label,
   checked,
   onChange,
-  classes,
+  className,
 }: CheckboxProps) => {
   return (
-    <label className={classes || styles.checkbox}>
+    <label className={`${className} ${styles.checkbox}`}>
       <span>{label}:</span>
       <input
         type="checkbox"

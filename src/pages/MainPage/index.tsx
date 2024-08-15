@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 
-import { EmployeeListWithPanelSettings } from 'widgets/EmployeeListWithPanelSettings';
+import { EmployeeTable } from 'widgets/EmployeeTable';
 
 import { useAppDispatch } from 'app/store/hooks';
 import { setEmployeesList } from 'app/store/slices/employeesListSlice';
@@ -26,7 +26,7 @@ export const MainPage = () => {
 
   return (
     <div className={styles.main}>
-      <EmployeeListWithPanelSettings />
+      <EmployeeTable />
     </div>
   );
 };
