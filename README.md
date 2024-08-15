@@ -1,6 +1,6 @@
-# React + TypeScript + Vite
+## Таблица редактирования сотрудников
 
-## небольшая таблица редактирования сотрудников
+![alt text](image.png)
 
 ## Как запустить
 
@@ -27,5 +27,6 @@ npm start
 - Vite
 - Redux Toolkit
 - React Router Dom
+- CSS modules
 
 ---
