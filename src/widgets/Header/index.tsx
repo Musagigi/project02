@@ -1,6 +1,7 @@
 import { NavBar } from './ui/NavBar';
 
 import { Container } from 'shared/ui/Container';
+import { ButtonThemeToogle } from 'entities/ButtonThemeToogle';
 
 import { ROUTES_MAP } from 'shared/constans/routing';
 import styles from './Header.module.scss';
@@ -11,6 +12,7 @@ export const Header = () => {
   return (
     <header className={styles.header}>
       <Container>
+        <ButtonThemeToogle />
         <NavBar
           pagesList={ROUTES_TO_PAGES}
           variant="contained"
