@@ -1,28 +1,28 @@
 .button {
-  cursor: pointer;
-  font: var(--font-size-m);
-  display: block;
-  position: relative;
-  border: 0;
-  width: 100%;
-  border-radius: 8px;
-  border: none;
   background: none;
-  user-select: none;
+  border: 0;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  display: block;
+  font: var(--font-size-m);
   overflow: hidden;
+  position: relative;
   transition:
     background-color 0.25s,
     border-color 0.25s,
     color 0.25s;
+  user-select: none;
+  width: 100%;
 }
 
 .contained {
-  color: var(--btn-font-color);
   background-color: var(--purple);
+  color: var(--btn-font-color);
 
   &:hover {
-    border-color: var(--purple-light);
     background-color: var(--purple-light);
+    border-color: var(--purple-light);
   }
 
   &:active {
@@ -31,17 +31,17 @@
 }
 
 .outlined {
-  color: var(--purple);
   border: 1px solid var(--purple);
+  color: var(--purple);
 
   &:hover {
-    color: var(--purple-light);
     border-color: var(--purple-light);
+    color: var(--purple-light);
   }
 
   &:active {
-    color: var(--btn-font-color);
     background-color: var(--purple-light);
+    color: var(--btn-font-color);
   }
 }
 
@@ -53,8 +53,8 @@
   }
 
   &:active {
-    color: var(--btn-font-color);
     background-color: var(--purple-light);
+    color: var(--btn-font-color);
   }
 }
 
