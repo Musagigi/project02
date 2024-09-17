@@ -1,0 +1,15 @@
+{
+  "extends": [
+    "stylelint-config-recommended-scss",
+    "stylelint-config-prettier-scss"
+  ],
+  "plugins": ["stylelint-order", "stylelint-scss"],
+  "rules": {
+    "order/properties-alphabetical-order": true
+  },
+  "overrides": [
+    {
+      "files": [".src/**/*.ts", ".src/**/*.tsx"]
+    }
+  ]
+}
