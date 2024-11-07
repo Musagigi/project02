@@ -1,3 +1,4 @@
+/// <reference types="vitest/config" />
 import react from '@vitejs/plugin-react';
 import autoprefixer from 'autoprefixer';
 import { defineConfig } from 'vite';
@@ -40,6 +41,11 @@ export default (args: ViteConfig) => {
         localsConvention: 'camelCase',
         generateScopedName,
       },
+    },
+    test: {
+      globals: true,
+      environment: 'jsdom',
+      setupFiles: 'vitestSetup.ts',
     },
   });
 };

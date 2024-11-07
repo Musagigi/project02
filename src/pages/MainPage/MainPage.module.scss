@@ -1,9 +1,9 @@
 .main {
-  width: 100%;
-  height: 100%;
+  align-items: center;
   background-color: var(--midnight-bg-color);
   display: flex;
   flex-direction: column;
-  align-items: center;
+  height: 100%;
   justify-content: center;
+  width: 100%;
 }

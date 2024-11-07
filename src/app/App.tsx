@@ -1,8 +1,9 @@
+import clsx from 'clsx';
 import { Outlet } from 'react-router-dom';
 
-import { Header } from 'widgets/Header';
-import { Footer } from 'widgets/Footer';
 import { Container } from 'shared/ui/Container';
+import { Footer } from 'widgets/Footer';
+import { Header } from 'widgets/Header';
 
 import { useAppSelector } from './store/hooks';
 import { themeSelector } from './store/selectors/themeSelector';
@@ -13,7 +14,7 @@ export const App = () => {
   const theme = useAppSelector(themeSelector);
 
   return (
-    <div className={`app ${theme}`}>
+    <div className={clsx('app', theme)}>
       <Header />
 
       <Container component="main">

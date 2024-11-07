@@ -1,7 +1,7 @@
 import { TField, TSortOrder } from 'widgets/EmployeeTable/lib/types';
-import { ButtonSorted } from '../ButtonSorted';
 
 import { ASC, BIRTHDAY, DESC, NAME } from '../../lib/constans';
+import { ButtonSorted } from '../ButtonSorted';
 
 type TEmployeeSort = {
   sortOrder: TSortOrder;

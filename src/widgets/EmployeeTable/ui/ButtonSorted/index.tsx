@@ -1,5 +1,6 @@
-import type { TField, TSortOrder } from '../../lib/types';
 import { ASC } from '../../lib/constans';
+
+import type { TField, TSortOrder } from '../../lib/types';
 
 type TButtonSorted = {
   field: TField;

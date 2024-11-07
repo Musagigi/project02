@@ -1,6 +1,8 @@
 import { createSlice } from '@reduxjs/toolkit';
+
+import { KEY_EMPLOYEES } from 'shared/constans/localStorageKeys';
+
 import type { TEmployee } from 'shared/types/employeeList';
-import { KEY_EMPLOYEES } from 'shared/constans/common';
 
 type TEmployeesList = {
   employees: Array<TEmployee>;

@@ -1,4 +1,5 @@
 import { createSlice } from '@reduxjs/toolkit';
+
 import { KEY_THEME } from 'shared/constans/localStorageKeys';
 
 type TThemeSlice = {

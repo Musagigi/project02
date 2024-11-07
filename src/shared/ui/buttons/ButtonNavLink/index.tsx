@@ -1,6 +1,7 @@
 import { NavLink } from 'react-router-dom';
 
 import type { TRoute } from 'shared/constans/routing';
+
 import styles from './ButtonNavLink.module.scss';
 
 type TButtonNavLink = TRoute & {

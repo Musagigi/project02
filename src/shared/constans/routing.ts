@@ -1,6 +1,6 @@
 export type TRoute = {
   path: string;
-  name: String;
+  name: string;
 };
 
 export const ROUTES_MAP = {

@@ -1,10 +1,10 @@
 import { useEffect } from 'react';
 
-import { EmployeeTable } from 'widgets/EmployeeTable';
-
 import { useAppDispatch } from 'app/store/hooks';
 import { setEmployeesList } from 'app/store/slices/employeesListSlice';
-import { KEY_EMPLOYEES } from 'shared/constans/common';
+import { KEY_EMPLOYEES } from 'shared/constans/localStorageKeys';
+import { EmployeeTable } from 'widgets/EmployeeTable';
+
 import styles from './MainPage.module.scss';
 
 export const MainPage = () => {

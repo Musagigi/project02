@@ -4,21 +4,21 @@
 @import 'themes/dark';
 
 .app {
-  font: var(--font-m);
+  align-items: center;
+  background-color: var(--bg-main-color);
   color: var(--main-color);
-  width: 100%;
-  height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  gap: 20px;
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  background-color: var(--bg-main-color);
+  font: var(--font-m);
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-synthesis: none;
+  gap: 20px;
+  height: 100vh;
+  justify-content: space-between;
+  text-rendering: optimizeLegibility;
+  width: 100%;
 }
 
 .active {

@@ -1,16 +1,20 @@
 import { FormEvent, ReactNode, useState } from 'react';
 
-import { EmployeeInput } from './ui/EmployeeInput';
-import { Checkbox } from 'shared/ui/Checkbox';
 import { Select } from 'features/Select';
+import { ARCHIVED, ROLE } from 'shared/constans/common';
+import { Checkbox } from 'shared/ui/Checkbox';
+
+import { reverseDateToDMY } from 'shared/utils/reverseDateToDMY';
+
+import { reverseDateToYMD } from 'shared/utils/reverseDateToYMD';
 
 import type { TEmployee } from 'shared/types/employeeList';
-import { reverseDateToDMY } from 'shared/utils/reverseDateToDMY';
-import { reverseDateToYMD } from 'shared/utils/reverseDateToYMD';
+
 import { formConfig, optionsCommon } from './config/formConfig';
-import { ARCHIVED, ROLE } from 'shared/constans/common';
-import { ERROR_PHONE } from './lib/constans';
+
 import styles from './FormEmployeeEdit.module.scss';
+import { ERROR_PHONE } from './lib/constans';
+import { EmployeeInput } from './ui/EmployeeInput';
 
 type TFormEmployeeEdit = {
   employee: TEmployee;

@@ -1,25 +1,29 @@
 import { useMemo, useState } from 'react';
 
-import { EmployeeListItem } from './ui/EmployeeListItem';
-import { EmployeeFilters } from './ui/EmployeeFilters';
-import { EmployeeSort } from './ui/EmployeeSort';
+import { useAppDispatch, useAppSelector } from 'app/store/hooks';
+import { employeesListSelector } from 'app/store/selectors/employeesListSelector';
+import { addEmployeeToList } from 'app/store/slices/employeesListSlice';
 import { Dialog } from 'features/Dialog';
+
+import { FormEmployeeEdit } from 'features/FormEmployeeEdit';
+import { useModalState } from 'shared/hooks/useModalState';
+
+import { FormButtons } from 'shared/ui/buttons/FormButtons';
 
 import type { TSortOrder } from './lib/types';
 import type { TEmployee } from 'shared/types/employeeList';
-import { employeesListSelector } from 'app/store/selectors/employeesListSelector';
-import { useAppDispatch, useAppSelector } from 'app/store/hooks';
+
+import styles from './EmployeeTable.module.scss';
+import { ASC, EMPLOYEE_LIST, EMPTY_EMPLOYEE_LIST, NAME } from './lib/constans';
 import {
   getEmptyObject,
   getFilterEmployees,
   getSortedEmployees,
 } from './lib/utils';
-import { useModalState } from 'shared/hooks/useModalState';
-import { FormEmployeeEdit } from 'features/FormEmployeeEdit';
-import { FormButtons } from 'shared/ui/buttons/FormButtons';
-import { addEmployeeToList } from 'app/store/slices/employeesListSlice';
-import { ASC, EMPLOYEE_LIST, EMPTY_EMPLOYEE_LIST, NAME } from './lib/constans';
-import styles from './EmployeeTable.module.scss';
+
+import { EmployeeFilters } from './ui/EmployeeFilters';
+import { EmployeeListItem } from './ui/EmployeeListItem';
+import { EmployeeSort } from './ui/EmployeeSort';
 
 export const EmployeeTable = () => {
   const dispatch = useAppDispatch();

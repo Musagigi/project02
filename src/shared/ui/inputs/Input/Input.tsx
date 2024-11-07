@@ -1,15 +1,17 @@
-import { InputHTMLAttributes } from 'react';
-import styles from './InputCommon.module.scss';
+import { ComponentProps, InputHTMLAttributes } from 'react';
 
-type TInputCommon = {
+import styles from './Input.module.scss';
+
+type TInputProps = {
   label?: string;
   error?: boolean;
   errorText?: string;
   value?: string;
   onChange?: (value: string) => void;
-} & InputHTMLAttributes<HTMLInputElement>;
+} & InputHTMLAttributes<HTMLInputElement> &
+  ComponentProps<'input'>;
 
-export const InputCommon = ({
+export const Input = ({
   name,
   defaultValue,
   type = 'text',
@@ -24,7 +26,7 @@ export const InputCommon = ({
   className,
   error,
   errorText,
-}: TInputCommon) => {
+}: TInputProps) => {
   return (
     <label className={`${styles.inputWrapper} ${className}`}>
       {label}:

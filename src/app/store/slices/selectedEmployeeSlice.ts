@@ -1,4 +1,5 @@
 import { createSlice } from '@reduxjs/toolkit';
+
 import { TEmployee } from 'shared/types/employeeList';
 
 type TSelectedEmployee = {

@@ -1,7 +1,7 @@
 import { InputHTMLAttributes } from 'react';
 import InputMask from 'react-input-mask';
 
-import { InputCommon } from 'shared/ui/inputs/InputCommon';
+import { Input } from 'shared/ui/inputs';
 
 type TEmployeeInput = {
   label?: string;
@@ -42,7 +42,7 @@ export const EmployeeInput = ({
   }
 
   return (
-    <InputCommon
+    <Input
       defaultValue={defaultValue}
       name={name}
       type={type}

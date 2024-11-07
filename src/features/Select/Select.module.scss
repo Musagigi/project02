@@ -1,9 +1,9 @@
 .block {
   select {
-    margin-left: 10px;
+    background-color: inherit;
     border: 1px solid var(--primary-color);
     border-radius: 4px;
-    background-color: inherit;
+    margin-left: 10px;
 
     option:checked {
       color: var(--common-bg-color);

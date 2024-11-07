@@ -1,7 +1,7 @@
 import { Select } from 'features/Select';
+import { ARCHIVED, ROLE } from 'shared/constans/common';
 import { Checkbox } from 'shared/ui/Checkbox';
 
-import { ARCHIVED, ROLE } from 'shared/constans/common';
 import { optionsWithOptionAll } from '../../config/optionsToTable';
 
 type TEmployeeFilters = {

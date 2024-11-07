@@ -1,26 +1,29 @@
 .contained {
+  background-color: var(--dark-bg-color);
   border: 1px solid transparent;
   border-radius: 8px;
-  padding: 10px 20px;
-  font-weight: 500;
   color: var(--second-color);
-  background-color: var(--dark-bg-color);
-  transition: border-color, color, 0.25s;
   cursor: pointer;
+  font-weight: 500;
+  padding: 10px 20px;
+  transition: border-color, color, 0.25s;
 
   &:hover {
-    color: var(--second-color);
     border-color: var(--second-color);
+    color: var(--second-color);
   }
+  // &:active {
+  //   color: var(--primary-color);
+  // }
 }
 
 .outlined {
-  padding: 10px 20px;
-  font-weight: 500;
-  color: var(--second-color);
   background-color: transparent;
-  transition: border-color, color, 0.25s;
+  color: var(--second-color);
   cursor: pointer;
+  font-weight: 500;
+  padding: 10px 20px;
+  transition: border-color, color, 0.25s;
 
   &:hover {
     color: var(--primary-color);

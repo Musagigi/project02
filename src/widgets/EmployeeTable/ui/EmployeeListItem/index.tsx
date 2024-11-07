@@ -2,8 +2,10 @@ import { useNavigate } from 'react-router-dom';
 
 import { useAppDispatch } from 'app/store/hooks';
 import { setSelectedEmployee } from 'app/store/slices/selectedEmployeeSlice';
-import type { TEmployee } from 'shared/types/employeeList';
+
 import { ROUTES_MAP } from 'shared/constans/routing';
+
+import type { TEmployee } from 'shared/types/employeeList';
 
 type TEmployeeListItem = {
   employee: TEmployee;
